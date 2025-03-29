@@ -118,5 +118,47 @@ int iListLen; // Hungarian case, where the variable data types is mentioned int 
     x = 5;
     y = ++x; // increments x by 1, then assigns x value to y
 
+/*
+ NOTE: ------------------------------------------------------------------------------------------------
+-------------------------------------CONDITIONAL STATEMENT---------------------------------------------
+-----------------------------------------------------------------------------------------------------*/
+    int a = 5;
+    if(a > 5){
+        std::cout << "a is greater than 5." << std::endl;
+    } else if(a < 5){
+        std::cout << "a is less than 5."<< std::endl;
+    } else{
+        std::cout << "a = 5"<< std::endl;
+    }
+
+    // Ternary Opeartor
+    // Condition ? statement : statement ;
+    a > 5 ? std::cout << "a is greater than 5"<< std::endl: std::cout << "a is less than or equal to 5"<< std::endl;
+/*
+ NOTE: ------------------------------------------------------------------------------------------------
+-------------------------------------------LOOPS-------------------------------------------------------
+-----------------------------------------------------------------------------------------------------*/
+
+    // while loop 
+    int i = 0;
+    std::cout << "while loop : Demonstration";
+    while (i < 5) {
+        std::cout << i << std::endl;
+        ++i;
+    }
+
+    std::cout << "for loop : Demonstration";
+    // for loop
+    for (int i = 0; i < 5; i++) {
+        std::cout << i << std::endl;
+    }
+    
+    std::cout << "do while loop : Demonstration";
+    // do while loop
+    i = 0;
+    do {
+        std::cout << i << std::endl;
+        ++i;
+    } while(i < 5);
     return 0;
 }
