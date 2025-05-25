@@ -8,6 +8,10 @@
 
 - [Algorithm Categorization](#algorithm-categorization)
 - [Time and Space Complexity](#time-and-space-complexity)
+  - [$O(1)$:](#o1)
+  - [$O(n)$:](#on)
+  - [$O(n^2)$:](#on2)
+  - [$O(log_{2}n)$:](#olog_2n)
 - [Kadane's Algorithm (sub-array sum)](#kadanes-algorithm-sub-array-sum)
 - [Moore's Algorithm (majority element)](#moores-algorithm-majority-element)
 - [Tree Traversals](#tree-traversals)
@@ -162,6 +166,90 @@ $\Theta(𝑛)$ : Describes a tight bound (both upper and lower bounds) of a func
 **Definition**
 
 Let $f ( n)$ and $g ( n)$ be two functions. We say that $f ( n)$ is $O ( g ( n))$ if and only if there are positive constants $C$ and $n_0$ such that $C ⋅ g ( n) > f ( n)$ for all $n > n_0$ .
+
+Examples:
+
+#### $O(1)$:
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main (int argc, char *argv[]) {
+    n = 10;
+    std::cout << i;
+    return 0;
+}
+```
+
+#### $O(n)$:
+
+Given an order of size `n`, maximum number of iterations that an algorithm takes to finish the task is n, then it's time complexity is $O(n)$.
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main (int argc, char *argv[]) {
+    n = 10;
+    for (int i = 0; i < n; i++) {
+        std::cout << i;
+    }
+    return 0;
+}
+```
+
+#### $O(n^2)$:
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main (int argc, char *argv[]) {
+    n = 10;
+    for (int i = 0; i < n; i++) {
+        for(int j = 0, j < n, j++){
+            std::cout << i;
+        }
+    }
+
+    return 0;
+}
+```
+
+#### $O(log_{2}n)$:
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main (int argc, char *argv[]) {
+    n = 10;
+    for (int i = 0; i*i < n; i++) {
+        std::cout << i;
+    }
+
+    return 0;
+}
+```
+
+#### $O(log_{3}n)$:
+
+The rate of decay of the iterating variable is proportional to power of 3, then it has timec complexity $log_{3}n$.
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main (int argc, char *argv[]) {
+    n = 10;
+    for (int i = 0; i*i*i < n; i++) {
+        std::cout << i;
+    }
+
+    return 0;
+}
+```
 
 ## Kadane's Algorithm (sub-array sum)
 
